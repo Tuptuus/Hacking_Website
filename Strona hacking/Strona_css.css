@@ -1,0 +1,1080 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700&display=swap&subset=latin-ext');
+
+/* ---------------GENERAL------------------- */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+.container
+{
+  width: 80%;
+  margin: 0 auto;
+}
+
+body
+{
+  font-family: 'Muli', sans-serif;
+}
+
+#ScrollUp
+{
+  position: fixed;
+  background-color: #2196f3;
+  color: white;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 40px;
+  border: 2px solid black;
+  margin-left: 95%;
+  margin-top: 800px;
+  cursor: pointer;
+}
+
+#ScrollUp1
+{
+  position: fixed;
+  background-color: #2196f3;
+  color: white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid black;
+  /* margin-left: 95%; */
+  margin-top: 800px;
+  cursor: pointer;
+  display: none;
+}
+
+.ReadMoreBtn
+{
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.ReadMoreBtn:hover
+{
+  color: #64DD17;
+  background: #212121;
+  transform: scale(1.2, 1.2);
+}
+
+.container h1
+{
+    padding-top: 30px;
+}
+
+.Gray
+{
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background-color: #32383d;
+}
+
+.GrayOver
+{
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background-color: #32383d;
+}
+
+.icon-menu
+{
+  color: white;
+  font-size: 40px;
+  /* line-height: 60px; */
+}
+
+/* ------------HEADER------------------ */
+
+header
+{
+  background-color: #212121;
+  color: white;
+  text-align: center;
+}
+
+header ul
+{
+  list-style: none;
+  font-size: 20px;
+}
+
+header li
+{
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+header a
+{
+  color: lightgray;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+header a:hover
+{
+  color: #64DD17;
+  border-bottom: 2px solid #64DD17;
+}
+
+#baner
+{
+  background:
+  url(https://images.unsplash.com/photo-1536242918817-db5e93c7a0e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  height: 400px;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  margin-top: -130px;
+}
+
+#baner h1
+{
+  padding-top: 150px;
+  padding-bottom: 20px;
+  font-size: 60px;
+}
+
+/* -------------------------------------- */
+
+/* --------------ARTYKUŁY---------------------- */
+
+#Artykuły
+{
+    /* padding-top: 50px; */
+    width: 100%;
+    font-size: 17px;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    background-image: url(backgroundv2.png);
+    padding-bottom: 200px;
+}
+
+.StringArtykuły
+{
+  font-size: 40px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+#StringArtykułyH
+{
+  margin-top: 50px;
+}
+
+.GrayForString
+{
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    font-size: 40px;
+    background-color: #32383d;
+    margin-bottom: 40px;
+}
+
+#GrayHH
+{
+  margin-top: 40px;
+}
+
+.Gray
+{
+  display: none;
+}
+
+/* -------------------------------------- */
+
+/* --------------MENU HACKER-------------------- */
+
+.DivHacker
+{
+    position: absolute;
+    height: 60px;
+    margin-left: 650px;
+    width: 130px;
+}
+
+#HackerButton
+{
+    position: relative;
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    background-color: #2196f3;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    /* margin-left: 400px; */
+    line-height: 60px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.HackerDrop
+{
+    position: absolute;
+    margin-top: -2px;
+    padding: 0px;
+    width: 200px;
+    background: #ccc;
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(-90deg);
+    transition: 0.2s;
+    /* margin-left: 100px; */
+    border: 2px solid white;
+    border-top: 0px;
+}
+
+.activeH
+{
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+.HackerDrop li
+{
+    list-style: none;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.HackerDrop li a
+{
+    display: block;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    background: #323232;
+    color: #fff;
+    border-bottom: 1px solid #232323;
+    transition: 0.2s;
+}
+
+.HackerDrop li a:hover
+{
+    color: #64DD17;
+    text-decoration: underline;
+}
+
+/* ----------------------------------------- */
+
+/* -----------------MENU MAIN------------------------ */
+
+.DivMain
+{
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  margin-left: 400px;
+}
+
+#MainButton
+{
+  position: relative;
+  width: 250px;
+  height: 60px;
+  font-size: 24px;
+  background-color: #2196f3;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  /* margin-left: 0px; */
+  line-height: 60px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.DivMain a
+{
+  text-decoration: none;
+  color: white;
+}
+
+/* -------------------------------------------------------- */
+
+/* ----------------MENU ATTACK-------------------- */
+
+.DivAttack
+{
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  margin-left: 850px;
+}
+
+#AttackButton
+{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    font-size: 24px;
+    background-color: #2196f3;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    /* margin-left: 400px; */
+    line-height: 60px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.AttackDrop
+{
+    position: absolute;
+    margin-top: -2px;
+    padding: 0px;
+    width: 250px;
+    background: #ccc;
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(-90deg);
+    transition: 0.2s;
+    margin-left: 400px;
+    border: 2px solid white;
+    margin-left: 0px;
+    border-top: 0px;
+}
+
+.activeA
+{
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+.AttackDrop li
+{
+    list-style: none;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.AttackDrop li a
+{
+    display: block;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    background: #323232;
+    color: #fff;
+    border-bottom: 1px solid #232323;
+    transition: 0.2s;
+}
+
+.AttackDrop li a:hover
+{
+    color: #64DD17;
+    text-decoration: underline;
+}
+
+/* ----------------------------------------- */
+
+/* ----------------MENU LINUX------------------------- */
+
+.DivLinux
+{
+    position: absolute;
+    height: 60px;
+    margin-left: 1100px;
+    width: 140px;
+}
+
+#LinuxButton
+{
+    position: relative;
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    background-color: #2196f3;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    /* margin-left: 400px; */
+    line-height: 60px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.LinuxDrop
+{
+    position: absolute;
+    margin-top: -2px;
+    padding: 0px;
+    width: 200px;
+    background: #ccc;
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(-90deg);
+    transition: 0.2s;
+    /* margin-left: 100px; */
+    border: 2px solid white;
+    border-top: 0px;
+}
+
+.activeL
+{
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+.LinuxDrop li
+{
+    list-style: none;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.LinuxDrop li a
+{
+    display: block;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    background: #323232;
+    color: #fff;
+    border-bottom: 1px solid #232323;
+    transition: 0.2s;
+}
+
+.LinuxDrop li a:hover
+{
+    color: #64DD17;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------- */
+
+/* ----------------MENU DEFENSE------------------------ */
+
+.DivDefense
+{
+  position: absolute;
+  width: 250px;
+  height: 60px;
+  margin-left: 1300px;
+}
+
+#DefenseButton
+{
+  position: relative;
+  width: 250px;
+  height: 60px;
+  font-size: 24px;
+  background-color: #2196f3;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  /* margin-left: 0px; */
+  line-height: 60px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.DivDefense a
+{
+  text-decoration: none;
+  color: white;
+}
+
+/* ---------------------------------------------- */
+
+/* ------------------FILMY------------------------------- */
+
+#filmy
+{
+   /* padding-top: 50px; */
+   width: 100%;
+   font-size: 17px;
+   background-size: cover;
+   color: white;
+   text-align: center;
+   background-image: url(backgroundv2.png);
+   padding-bottom: 200px;
+}
+
+#filmiki
+{
+  color: white;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  font-size: 60px;
+  font-size: 60px;
+}
+
+.card
+{
+  display: inline-block;
+  width: 500px;
+  height: 350px;
+  position: relative;
+  background-color: #2196f3;
+  font-size: 300px;
+  line-height: 350px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.card img
+{
+  width: 100%;
+  height: 100%;
+}
+
+.box
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #32383df0;
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 30px;
+  line-height: 50px;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card:hover > .box
+{
+  opacity: 0.9;
+}
+
+.box a
+{
+  color: white;
+  transition: 0.3s;
+}
+
+.box a:hover
+{
+  color: #64DD17;
+}
+
+
+/* ------------------------------------------------------ */
+
+/* -------------------MENU BURGER---------------------- */
+
+#burger
+{
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  line-height: 60px;
+  float: right;
+  margin-right: 150px;
+}
+
+.Hamburger-nav
+{
+  position: absolute;
+  /* background-color: red; */
+  height: 310px;
+  width: 250px;
+  margin-top: 60px;
+  transform: perspective(1000px) rotateX(-90deg);
+  transition: 0.2s;
+  transform-origin: top;
+}
+
+.activeB
+{
+  position: absolute;
+  /* background-color: red; */
+  height: 310px;
+  width: 250px;
+  margin-top: 60px;
+  transform: perspective(1000px) rotateX(0deg);
+}
+
+/* ---------------------------------------------- */
+
+/* -----------BURGER LINUX------------------------------ */
+
+#LinuxButton1
+{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    font-size: 24px;
+    background-color: #2196f3;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    /* margin-left: 400px; */
+    line-height: 60px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.LinuxDrop1
+{
+  position: absolute;
+  margin-top: -2px;
+  padding: 0px;
+  width: 250px;
+  background: #ccc;
+  transform-origin: top;
+  transform: perspective(1000px) rotateX(-90deg);
+  transition: 0.2s;
+  /* margin-left: 100px; */
+  border: 2px solid white;
+  border-top: 0px;
+}
+
+.LinuxDrop1Active
+{
+  position: relative;
+  margin-top: -2px;
+  padding: 0px;
+  width: 250px;
+  background: #ccc;
+  transform-origin: top;
+  transform: perspective(1000px) rotateX(0deg);
+  transition: 0.2s;
+  /* margin-left: 100px; */
+  border: 2px solid white;
+  border-top: 0px;
+}
+
+.LinuxDrop1 li
+{
+    list-style: none;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.LinuxDrop1 li a
+{
+    display: block;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    background: #323232;
+    color: #fff;
+    border-bottom: 1px solid #232323;
+    transition: 0.2s;
+}
+
+.LinuxDrop1 li a:hover
+{
+    color: #64DD17;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------ */
+
+/* ---------------BURGER HACK------------------------------- */
+
+#HackerButton1
+{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    font-size: 24px;
+    background-color: #2196f3;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    /* margin-left: 400px; */
+    line-height: 60px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.HackerDrop1
+{
+    position: absolute;
+    margin-top: -2px;
+    padding: 0px;
+    width: 250px;
+    background: #ccc;
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(-90deg);
+    transition: 0.2s;
+    /* margin-left: 100px; */
+    border: 2px solid white;
+    border-top: 0px;
+}
+
+.HackerDrop1Active
+{
+    position: relative;
+    margin-top: -2px;
+    padding: 0px;
+    width: 250px;
+    background: #ccc;
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(0deg);
+    transition: 0.2s;
+    /* margin-left: 100px; */
+    border: 2px solid white;
+    border-top: 0px;
+}
+
+.HackerDrop1 li
+{
+    list-style: none;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.HackerDrop1 li a
+{
+    display: block;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    background: #323232;
+    color: #fff;
+    border-bottom: 1px solid #232323;
+    transition: 0.2s;
+}
+
+.HackerDrop1 li a:hover
+{
+    color: #64DD17;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------ */
+
+/* ----------------BURGER MAIN---------------------------- */
+
+#MainButton1
+{
+  position: relative;
+  width: 250px;
+  height: 60px;
+  font-size: 24px;
+  background-color: #2196f3;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  /* margin-left: 0px; */
+  line-height: 60px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+/* ------------------------------------------------ */
+
+/* -----------------BURGER ATTACK-------------------------- */
+
+#AttackButton1
+{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    font-size: 24px;
+    background-color: #2196f3;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    /* margin-left: 400px; */
+    line-height: 60px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.AttackDrop1
+{
+    position: absolute;
+    margin-top: -2px;
+    padding: 0px;
+    width: 250px;
+    background: #ccc;
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(-90deg);
+    transition: 0.2s;
+    margin-left: 400px;
+    border: 2px solid white;
+    margin-left: 0px;
+    border-top: 0px;
+}
+
+.AttackDrop1Active
+{
+    position: relative;
+    margin-top: -2px;
+    padding: 0px;
+    width: 250px;
+    background: #ccc;
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(0deg);
+    transition: 0.2s;
+    margin-left: 400px;
+    border: 2px solid white;
+    margin-left: 0px;
+    border-top: 0px;
+}
+
+.AttackDrop1 li
+{
+    list-style: none;
+    font-size: 20px;
+    padding: 0px;
+}
+
+.AttackDrop1 li a
+{
+    display: block;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    background: #323232;
+    color: #fff;
+    border-bottom: 1px solid #232323;
+    transition: 0.2s;
+}
+
+.AttackDrop1 li a:hover
+{
+    color: #64DD17;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------ */
+
+/* --------------BURGER DEFENSE----------------------------- */
+
+#DefenseButton1
+{
+  position: relative;
+  width: 250px;
+  height: 60px;
+  font-size: 24px;
+  background-color: #2196f3;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  /* margin-left: 0px; */
+  line-height: 60px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+/* ---------------------------------------------- */
+
+/* --------------------------------SECTION LINUX------------------------- */
+#SectionLinux
+{
+  color: white;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  font-size: 60px;
+  margin-top: 250px;
+}
+
+#kaliLinux
+{
+  margin-top: 150px;
+}
+
+#slackware
+{
+  margin-top: 150px;
+}
+
+#UbuntuCore
+{
+  margin-top: 150px;
+}
+
+/* ------------------------------------RESPONISVE--------------------------------------- */
+#art
+{
+  display: none;
+}
+
+@media screen and (max-width: 768px)
+{
+  #baner h1
+  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  #baner p
+    {
+      padding-top: 150px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+  #defense
+    {
+      font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+  #Artykuły #tak
+    {
+      height: 120px;
+    }
+}
+
+@media screen and (max-width: 1565px)
+{
+  .GrayOver
+    {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 1565px)
+{
+  .Gray
+    {
+      display: block;
+    }
+}
+
+@media screen and (max-width: 1565px)
+{
+  .Hamburger-nav
+    {
+      margin-left: 80%;
+    }
+}
+
+@media screen and (max-width: 1400px)
+{
+  #art
+    {
+      display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1400px)
+{
+  #art1
+    {
+      display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px)
+{
+  .Hamburger-nav
+    {
+      margin-left: 60%;
+    }
+}
+
+/* @media screen and (max-width: 768px)
+{
+  #ScrollUp1
+    {
+      margin-left: 700px;
+    }
+} */
+
+@media screen and (max-width: 1565px)
+{
+  #ScrollUp1
+    {
+      margin-left: 90%;
+    }
+}
+
+@media screen and (max-width: 1900px)
+{
+  #ScrollUp
+    {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 500px)
+{
+  .Hamburger-nav
+    {
+      margin-left: 190px;
+    }
+}
+
+@media screen and (max-width: 1565px)
+{
+  #ScrollUp1
+    {
+      display: block;
+    }
+}
+
+/* @media screen and (max-width: 500px)
+{
+  #ScrollUp1
+    {
+      margin-left: 440px;
+    }
+} */
+
+@media screen and (max-width: 768px)
+{
+  .card
+    {
+      width: 400px;
+      height: 250px;
+      font-size: 200px;
+      line-height: 250px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+  .box
+    {
+      font-size: 30px;
+      padding-top: 0;
+    }
+}
